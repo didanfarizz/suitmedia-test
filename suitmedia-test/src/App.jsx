@@ -1,11 +1,11 @@
-// src/App.jsx
+
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'; // Import useLocation
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/navbar';
 import Hero from './components/hero'; 
 import './index.css'; // 
 
-// Definisi links yang akan dibagi ke Navbar dan Hero
+
 const appLinks = [
   { id: 1, label: 'Work', link: '/work' },
   { id: 2, label: 'About', link: '/about' },
@@ -15,7 +15,7 @@ const appLinks = [
   { id: 6, label: 'Contact', link: '/contact' },
 ];
 
-// Komponen Pembungkus untuk mengelola useLocation
+
 const AppContent = () => {
   const location = useLocation();
   const [activePath, setActivePath] = useState(location.pathname);
